@@ -39,6 +39,11 @@ La integración con MLflow permitió registrar y comparar cada ejecución de man
 
 El chatbot responde preguntas sobre beneficios, políticas internas y roles de una empresa ficticia (**Contoso Electronics**), usando como base una colección de documentos PDF internos.
 
+## Evidencia MLFLow
+
+<img width="2362" height="1301" alt="image" src="https://github.com/user-attachments/assets/477506ad-d6f0-4fad-98c6-4e47662390c3" />
+
+
 ---
 
 ## 📂 Estructura del Proyecto
