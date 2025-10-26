@@ -6,13 +6,13 @@ Este proyecto demuestra cómo construir, evaluar y automatizar un chatbot de tip
 
 ## 📊 Conclusión de la Evaluación del Chatbot (MLflow + LangChain)
 
-Durante la evaluación del asistente (`v1_asistente_rrhh`), se analizaron 5 preguntas del dominio regulatorio energético usando el pipeline de evaluación automática con **LangChain** y **MLflow**.
+Durante la evaluación del asistente, se analizaron 5 preguntas del mercado energetico de Colombia usando el pipeline de evaluación automática con **LangChain** y **MLflow**.
 
 Cada ejecución fue evaluada con dos niveles de análisis:
 
-1. **QA Correctness (`qa_correct`)** – Verifica si la respuesta generada coincide con la esperada.
-2. **Criteria Overall (`criteria_overall_score`)** – Evalúa múltiples criterios (exactitud, relevancia, coherencia, no toxicidad y seguridad).
-3. **LangChain Eval (`lc_is_correct`)** – Indicador general del evaluador de LangChain.
+1. **QA Correctness** – Verifica si la respuesta generada coincide con la esperada.
+2. **Criteria Overall** – Evalúa múltiples criterios (exactitud, relevancia, coherencia, no toxicidad y seguridad).
+3. **LangChain Eval** – Indicador general del evaluador de LangChain.
 
 ### 🔍 Resultados generales
 
@@ -26,11 +26,11 @@ Cada ejecución fue evaluada con dos niveles de análisis:
 
 El modelo muestra un **alto desempeño global (100%)** en criterios de calidad como coherencia, relevancia y seguridad, indicando que las respuestas son claras, bien estructuradas y libres de lenguaje inapropiado.  
 
-Sin embargo, la **precisión factual (QA Correctness = 60%)** refleja que el asistente todavía puede mejorar en la exactitud de ciertos contenidos normativos.  
+Sin embargo, la **precisión (QA Correctness = 60%)** refleja que el asistente todavía puede mejorar en la exactitud de ciertos contenidos normativos.  
 
 ### ✅ Conclusión general
 
-El asistente **demuestra un comportamiento sólido y seguro**, con respuestas coherentes y relevantes, pero requiere **refinamiento en la precisión factual** para alcanzar un desempeño óptimo en tareas de consulta normativa o técnica.  
+El asistente **demuestra un comportamiento sólido y seguro**, con respuestas coherentes y relevantes, pero requiere refinamiento en la precisión para alcanzar un desempeño óptimo en tareas de consulta normativa o técnica.  
 
 La integración con MLflow permitió registrar y comparar cada ejecución de manera reproducible, y el dashboard en Streamlit facilita la visualización de estos resultados.
 
