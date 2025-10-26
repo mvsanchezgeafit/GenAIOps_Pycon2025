@@ -4,6 +4,37 @@ Este proyecto demuestra cómo construir, evaluar y automatizar un chatbot de tip
 
 ---
 
+## 📊 Conclusión de la Evaluación del Chatbot (MLflow + LangChain)
+
+Durante la evaluación del asistente (`v1_asistente_rrhh`), se analizaron 5 preguntas del dominio regulatorio energético usando el pipeline de evaluación automática con **LangChain** y **MLflow**.
+
+Cada ejecución fue evaluada con dos niveles de análisis:
+
+1. **QA Correctness (`qa_correct`)** – Verifica si la respuesta generada coincide con la esperada.
+2. **Criteria Overall (`criteria_overall_score`)** – Evalúa múltiples criterios (exactitud, relevancia, coherencia, no toxicidad y seguridad).
+3. **LangChain Eval (`lc_is_correct`)** – Indicador general del evaluador de LangChain.
+
+### 🔍 Resultados generales
+
+| Métrica | Descripción | Promedio |
+|----------|--------------|-----------|
+| **QA Correctness** | Respuestas consideradas correctas | 60% |
+| **Criteria Overall Score** | Cumplimiento global de criterios de calidad | 100% |
+| **LangChain Eval Correctness** | Evaluación base de LangChain | 100% |
+
+### 📈 Interpretación
+
+El modelo muestra un **alto desempeño global (100%)** en criterios de calidad como coherencia, relevancia y seguridad, indicando que las respuestas son claras, bien estructuradas y libres de lenguaje inapropiado.  
+
+Sin embargo, la **precisión factual (QA Correctness = 60%)** refleja que el asistente todavía puede mejorar en la exactitud de ciertos contenidos normativos.  
+
+### ✅ Conclusión general
+
+El asistente **demuestra un comportamiento sólido y seguro**, con respuestas coherentes y relevantes, pero requiere **refinamiento en la precisión factual** para alcanzar un desempeño óptimo en tareas de consulta normativa o técnica.  
+
+La integración con MLflow permitió registrar y comparar cada ejecución de manera reproducible, y el dashboard en Streamlit facilita la visualización de estos resultados.
+
+
 ## 🧠 Caso de Estudio
 
 El chatbot responde preguntas sobre beneficios, políticas internas y roles de una empresa ficticia (**Contoso Electronics**), usando como base una colección de documentos PDF internos.
